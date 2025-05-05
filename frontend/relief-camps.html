@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Relief Camps - Disaster Relief Management</title>
+  <meta name="description" content="Relief Camps for Disaster Relief Management">
+  <meta name="keywords" content="disaster, relief, camps, shelter">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Disaster Relief</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="victim-management.html">Victim Management</a></li>
+          <li><a href="missing-persons.html">Missing Persons</a></li>
+          <li><a href="relief-camps.html" class="active">Relief Camps</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="volunteers.html">Volunteers</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Relief Camps</h1>
+        <p>Information about active relief camps and temporary shelters</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Relief Camps</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Relief Camps Section -->
+    <section id="relief-camps" class="section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Relief Camps</h2>
+        <p>View and manage relief camps and emergency shelters</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Map View -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <h3>Camp Locations</h3>
+              <p>Interactive map showing all active relief camps.</p>
+              <div class="camp-map mt-4" style="background-color: #f1f1f1; height: 400px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <p>Map will be displayed here</p>
+                <!-- Replace with actual map implementation -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Camp Filter -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-funnel"></i>
+              </div>
+              <h3>Find Camps</h3>
+              <p>Find relief camps by location or available facilities.</p>
+              <form action="#" method="get" class="mt-4">
+                <div class="mb-3">
+                  <label for="location" class="form-label">Location</label>
+                  <input type="text" class="form-control" id="location" placeholder="City or Area">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Facilities Available</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="medical" id="medical">
+                    <label class="form-check-label" for="medical">
+                      Medical Facilities
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="food" id="food">
+                    <label class="form-check-label" for="food">
+                      Food Distribution
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="water" id="water">
+                    <label class="form-check-label" for="water">
+                      Clean Water
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="sanitation" id="sanitation">
+                    <label class="form-check-label" for="sanitation">
+                      Sanitation Services
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="capacity" class="form-label">Minimum Capacity</label>
+                  <select class="form-control" id="capacity">
+                    <option value="">Any Capacity</option>
+                    <option value="100">At least 100</option>
+                    <option value="200">At least 200</option>
+                    <option value="300">At least 300</option>
+                    <option value="400">At least 400</option>
+                    <option value="500">At least 500</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Find Camps</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Camp List -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-house-door"></i>
+              </div>
+              <h3>Active Relief Camps</h3>
+              <p>List of all active relief camps and their current status.</p>
+              <div class="table-responsive mt-4">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Camp Name</th>
+                      <th>Location</th>
+                      <th>Capacity</th>
+                      <th>Current Occupancy</th>
+                      <th>Contact Person</th>
+                      <th>Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Delhi Flood Relief Camp</td>
+                      <td>New Delhi</td>
+                      <td>500</td>
+                      <td><span class="badge bg-success">275 (55%)</span></td>
+                      <td>Rajesh Verma</td>
+                      <td><a href="#" class="btn btn-sm btn-info"><i class="bi bi-info-circle"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Mumbai Cyclone Shelter</td>
+                      <td>Mumbai</td>
+                      <td>350</td>
+                      <td><span class="badge bg-warning">310 (89%)</span></td>
+                      <td>Pooja Sharma</td>
+                      <td><a href="#" class="btn btn-sm btn-info"><i class="bi bi-info-circle"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Kolkata Flood Relief</td>
+                      <td>Kolkata</td>
+                      <td>400</td>
+                      <td><span class="badge bg-success">220 (55%)</span></td>
+                      <td>Anil Mehta</td>
+                      <td><a href="#" class="btn btn-sm btn-info"><i class="bi bi-info-circle"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Chennai Tsunami Shelter</td>
+                      <td>Chennai</td>
+                      <td>300</td>
+                      <td><span class="badge bg-danger">295 (98%)</span></td>
+                      <td>Suresh Kumar</td>
+                      <td><a href="#" class="btn btn-sm btn-info"><i class="bi bi-info-circle"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Assam Flood Relief</td>
+                      <td>Guwahati</td>
+                      <td>450</td>
+                      <td><span class="badge bg-success">200 (44%)</span></td>
+                      <td>Neha Das</td>
+                      <td><a href="#" class="btn btn-sm btn-info"><i class="bi bi-info-circle"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admin Controls (for authorized users) -->
+          <div class="col-12 mt-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3>Camp Administration</h3>
+              <p>Add new relief camps or modify existing camp information (Admin access required).</p>
+              <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary me-2"><i class="bi bi-plus-circle"></i> Add New Camp</a>
+                <a href="#" class="btn btn-secondary"><i class="bi bi-gear"></i> Manage Camps</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Relief Camps Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Disaster Relief Management</h3>
+      <p>Providing efficient disaster relief operations and management of resources.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Disaster Relief Management</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html> 
